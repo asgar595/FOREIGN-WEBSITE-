@@ -1,0 +1,872 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    cursor: default;
+
+}
+
+
+
+
+nav {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(63, 58, 58, 0.434);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    z-index: 1000;
+
+}
+
+.navbar {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.cmn {
+    /* background-color: rgba(63, 58, 58, 0.434); */
+    color: white;
+    border: none;
+    font-size: medium;
+    font-weight: 700;
+}
+
+
+.cmn:hover {
+    cursor: pointer;
+
+}
+
+.dropbtn {
+    /* background-color: rgba(63, 58, 58, 0.434); */
+    color: white;
+    padding: 0px;
+    font-size: medium;
+    font-weight: 700;
+    border: none;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: red;
+    text-decoration: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    cursor: pointer;
+    display: block;
+}
+
+
+.container1 {
+    background-image: url('https://media.istockphoto.com/id/1470617656/vector/ai-artificial-intelligence-chipset-on-circuit-board-in-futuristic-concept-suitable-for.jpg?s=612x612&w=0&k=20&c=_wC-pphyNI2muaUHG4N9JuYXxJEMDuzx56Dvzr8ZDUk=');
+    background-repeat: no-repeat;
+    /* Remove repetition */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vh;
+}
+
+.h2 {
+    font-size: 200%;
+}
+
+.h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 300%;
+}
+
+.buttons {
+    margin-top: 5vh;
+    display: flex;
+    gap: 4vw;
+    justify-content: space-evenly;
+}
+
+.buttons a {
+    text-decoration: none;
+
+}
+
+.buttons button {
+    color: white;
+    font-weight: 700;
+    font-size: medium;
+    background-color: red;
+    color: white;
+    width: 13vw;
+    border-radius: 25px;
+    height: 6vh;
+    transition: transform 0.3s ease;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    transform: translateY(-10px);
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    /* Blink out halfway */
+    100% {
+        opacity: 1;
+    }
+
+    /* Blink back in */
+}
+
+.blink {
+    animation: blink 1s infinite;
+    /* Apply the blink animation infinitely */
+    color: yellow;
+    font-size: large;
+    font-weight: 800;
+}
+
+
+/* Style the fixed button */
+.scroll {
+    position: fixed;
+    bottom: -100px;
+    right: 20px;
+    background-color: rgba(255, 0, 0, 0.442);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+    border-radius: 0.5vw;
+    width: 4vw;
+}
+
+.scroll.active {
+    bottom: 20px;
+
+}
+
+
+.content2 {
+    padding-bottom: 0.01vh;
+    padding-top: 7vh;
+    padding-left: 3vw;
+    background-color: rgb(229 237 240);
+    margin-bottom: 10vh;
+}
+
+.content2 .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-bottom: 7vh;
+}
+
+.content2 h3 {
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.content2 .images img {
+    width: 10vw;
+}
+
+
+.content3 {
+    border-radius: 20px;
+    margin: 3vh 5vw;
+    box-shadow: 1px 1px 12px 4px rgb(218, 216, 216);
+    padding: 3vw;
+}
+
+.content3 h3 {
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.box {
+    margin-top: 5vh;
+    display: flex;
+    gap: 5vw;
+}
+
+.content3 p {
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.container4 {
+    padding: 3vw;
+
+    background-image: url('https://st3.depositphotos.com/1112188/16061/v/1600/depositphotos_160612710-stock-illustration-grey-world-map-globe-isolated.jpg');
+    background-repeat: no-repeat;
+    /* Remove repetition */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container4 h3 {
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.box1 {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1 img {
+    border: 2px solid black;
+
+}
+
+.box2 table {
+    box-shadow: 2px 1px 27px 4px black;
+}
+
+.box2 h4 {
+    font-size: 150%;
+    font-weight: 600;
+    margin-bottom: 2vh;
+    padding-left: 10vw;
+
+}
+
+.box2 table tr,
+td {
+    border: 2px solid black;
+    background-color: white;
+    padding: 20px;
+}
+
+
+.container5 {
+    padding: 3vw;
+    background-color: rgb(229 237 240)
+}
+
+.container5 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+
+.content5 {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 12px 4px rgb(218, 216, 216);
+    border-radius: 10px;
+}
+
+.top h4 {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 2vh;
+}
+
+.container5 p {
+    font-size: 120%;
+}
+
+.container6 {
+    padding: 3vw;
+    margin-bottom: 3vh;
+}
+
+.container6 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+.content6 {
+    padding: 20px;
+}
+
+
+.container6 table {
+    position: relative;
+    left: 30vw;
+    top: 5vh;
+    box-shadow: 2px 1px 27px 4px black;
+}
+
+.container7 {
+    padding: 3vw;
+    background-color: rgb(229 237 240)
+}
+
+.container7 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+.content7 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+}
+
+.content7 img {
+    width: 15vw;
+}
+
+.container8 {
+    padding: 3vw;
+}
+
+.container8 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+.content8 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 41vw;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.container8 img {
+    width: 1vw;
+}
+
+
+.address {
+    border-radius: 5px;
+    padding-top: 1vh;
+    box-shadow: 1px 1px 12px 4px rgb(218, 216, 216);
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.common {
+    border-radius: 5px;
+    padding-top: 1vh;
+    box-shadow: 1px 1px 12px 4px rgb(218, 216, 216);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.email {
+    width: 25vw;
+    height: 18vh;
+}
+
+.call {
+    width: 13vw;
+    height: 18vh;
+}
+
+.containerA1 {
+    padding: 3vw;
+    background-color: rgb(229 237 240)
+}
+
+.A1btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.containerA1 .cmnbtn {
+    font-weight: 600;
+    font-size: 120%;
+    margin-bottom: 5vh;
+    width: 20vw;
+    height: 8vh;
+    border: 2px solid grey;
+    background-color: white;
+    color: red;
+}
+
+.containerA1 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+
+.contentA1 {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 12px 4px rgb(218, 216, 216);
+    border-radius: 10px;
+}
+
+
+.cmnbtn:hover {
+    cursor: pointer;
+    background-color: rgb(232, 121, 121);
+    color: white;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+#info {
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+}
+
+#info ul {
+    font-size: 110%;
+    color: black;
+    font-weight: 600;
+    padding-left: 3vw;
+}
+
+
+.containerA2 {
+    padding: 3vw;
+    background-color: rgb(229 237 240)
+}
+
+.containerA2 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+.A2head {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.contentA2 {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 12px 4px rgb(218, 216, 216);
+    border-radius: 10px;
+}
+
+.contentA2 ul {
+    list-style-type: none;
+    font-size: 120%;
+}
+
+
+.click {
+    font-size: 120%;
+    display: flex;
+    gap: 1vw;
+}
+
+.click button {
+    color: white;
+    font-weight: 700;
+    font-size: medium;
+    background-color: rgb(147, 147, 246);
+    color: white;
+    width: 7vw;
+    border-radius: 25px;
+    height: 5vh;
+    transition: transform 0.3s ease;
+}
+
+
+.click button:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    transform: translateY(-5px);
+}
+
+
+
+.containerA3 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+
+.containerA3 {
+    padding: 3vw;
+    background-color: white;
+}
+
+.row {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+
+.card1 {
+    position: relative;
+    /* Required for positioning child elements */
+    display: inline-block;
+
+}
+
+.image1 {
+    border: 3px solid black;
+    width: 20vw;
+    height: 70vh;
+}
+
+.card-body1 {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Ensure box spans entire width of container */
+    background-color: rgb(236 73 73 / 70%);
+    /* Semi-transparent black background */
+    color: #fff;
+    /* Text color */
+    padding: 30px;
+    /* Padding around content */
+    box-sizing: border-box;
+}
+
+.card2 {
+    position: relative;
+    display: inline-block;
+
+}
+
+.image2 {
+    border: 3px solid black;
+    width: 20vw;
+    height: 70vh;
+}
+
+.card-body2 {
+    position: absolute;
+    bottom: 0;
+    right: 0.1vh;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 100%;
+    background-color: rgb(236 73 73 / 70%);
+    /* Adjust the background color and opacity */
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+.card3 {
+    position: relative;
+    /* Required for positioning child elements */
+    display: inline-block;
+
+}
+
+.image3 {
+    border: 3px solid black;
+    width: 20vw;
+    height: 70vh;
+}
+
+
+.card-body3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(236 73 73 / 70%);
+    /* Adjust the background color and opacity */
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+.card4 {
+    position: relative;
+    /* Required for positioning child elements */
+    display: inline-block;
+
+
+}
+
+.image4 {
+    border: 3px solid black;
+    width: 20vw;
+    height: 70vh;
+}
+
+.card-body4 {
+    position: absolute;
+    margin-left: 30px;
+    bottom: 0;
+    right: 0.1vw;
+    width: 100%;
+    background-color: rgb(236 73 73 / 70%);
+    /* Adjust the background color and opacity */
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+
+.a4dropbtn {
+    color: rgb(106, 158, 227);
+    font-size: 120%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+/* .a4dropbtn:hover,
+.a4dropbtn:focus {
+    background-color: #2980B9;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.a4dropdown {
+    font-size: 120%;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.a4dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.a4dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+.a4box {
+    margin-bottom: 2vh;
+    width: 70vw;
+    background-color: #f0f0f0;
+    /* Set the background color */
+    border: 2px solid #ccc;
+    /* Add a border */
+    border-radius: 20px;
+    /* Add rounded corners */
+    padding: 20px;
+    /* Add padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a box shadow */
+}
+
+
+.contentA4 {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+}
+
+
+.a4box1 {
+    display: flex;
+    /* Use flexbox to create a flexible layout */
+    align-items: center;
+    width: 2000px
+        /* Align items vertically in the center */
+}
+
+.imag1 {
+    flex: 0 0 auto;
+    /* Allow image to grow or shrink, but not stretch */
+    margin-right: 20px;
+    /* Add spacing between image and text */
+}
+
+.a4content {
+    flex: 10;
+    /* Allow text to grow to fill remaining space */
+}
+
+.size1 {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    /* Remove default bullets */
+    padding-left: 20px;
+    /* Add some padding for indentation */
+}
+
+/* li:before {
+    content: "\2713";
+   
+    display: inline-block;
+    width: 1em;
+    
+    margin-left: -1em;
+   
+} */
+
+.box {
+    margin-bottom: 20px;
+    /* Add margin below each element */
+}
+
+
+.containerA4 {
+    padding: 3vw;
+    background-color: rgb(229 237 240);
+}
+
+.containerA4 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+
+.containerA5 {
+    padding: 3vw;
+    background-color: white;
+}
+
+.containerA5 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+
+.contentA5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.containerA6 {
+    padding: 3vw;
+    background-color: white;
+}
+
+.containerA6 h3 {
+    font-size: 200%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+
+.contentA6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+
+.imgh {
+    transition: transform 0.3s ease;
+}
+
+.imgh:hover {
+    box-shadow: 5px 5px 5px black;
+    transform: translateY(-10px);
+}
